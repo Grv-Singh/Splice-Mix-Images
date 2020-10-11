@@ -1,6 +1,6 @@
 # Photo Join
 
-Live Interaction [![Run on Repl.it](https://repl.it/badge/github/Grv-Singh/Splice-Mix-Images)](https://repl.it/github/Grv-Singh/Splice-Mix-Images)
+[![Run on Repl.it](https://repl.it/badge/github/Grv-Singh/Splice-Mix-Images)](https://repl.it/github/Grv-Singh/Splice-Mix-Images) for Live Interaction
 
 * The result of stitching photos is:
 ![](https://raw.githubusercontent.com/Grv-Singh/Splice-Mix-Images/main/blend.png)
