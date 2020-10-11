@@ -16,4 +16,5 @@ Live Interaction [![Run on Repl.it](https://repl.it/badge/github/Grv-Singh/Splic
  * photos: After running the code, several photos will be generated in the code directory, which are generated indirectly during running. The final photo is final.jpg
  * past.py past3.py: is the experimental code, corresponding to final2.jpg, fianl.jpg. The specific difference between the two codes is the different cascading method.
 
--note: The transfer function directly resets the size of the photo, so the photo will be deformed. Due to the proportion of cropping the photo may make the photo no longer coordinated.
+## Note:
+ * The transfer function directly resets the size of the photo, so the photo will be deformed. Due to the proportion of cropping the photo may make the photo no longer coordinated.
