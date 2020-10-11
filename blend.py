@@ -65,7 +65,7 @@ def scale(img_path, dst_width,dst_height):
 def jointAndBlend():
     iW_size = W_num * W_size
     iH_size = H_num * H_size
-    I = numpy.array(scale(root+"lyf.jpg", iW_size, iH_size))
+    I = numpy.array(scale(root+"photo.jpg", iW_size, iH_size))
     I = numexpr.evaluate("""I*(1-alpha)""")
 
     for i in range(W_num):
@@ -84,7 +84,7 @@ def jointAndBlend():
 # todo: 旋转照片 blend.py
 def rotate():
     imName = "blend.png"
-    print("ABCDE...")
+    print("Rotating...")
     STA = time.time()
     im = Image.open(imName)
     im2 = Image.new("RGBA", (W_size * int(W_num + 1), H_size * (H_num + 4)))
@@ -97,10 +97,10 @@ def rotate():
 # name: addText
 # todo: 在图片中写祝福语
 def addText():
-    print("ABCDEFGH...")
+    print("Adding Text...")
     img = Image.open("blend.png")
     fontWeight=W_num*W_size//12
-    font = ImageFont.truetype('xindexingcao57.ttf', fontWeight)
+    font = ImageFont.truetype('product.ttf', fontWeight)
     draw = ImageDraw.Draw(img)
     draw.ink = 21 + 118*256 + 65*256*256
 
