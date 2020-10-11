@@ -2,10 +2,10 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/Grv-Singh/Splice-Mix-Images)](https://repl.it/github/Grv-Singh/Splice-Mix-Images) for Live Interaction
 
-* The result of stitching photos is:
+### The result of stitching photos is:
 ![](https://raw.githubusercontent.com/Grv-Singh/Splice-Mix-Images/main/blend.png)
 
-* Addition of Text:
+### Addition of Text:
 ![](https://raw.githubusercontent.com/Grv-Singh/Splice-Mix-Images/main/addText.png)
 
 ## Program description
