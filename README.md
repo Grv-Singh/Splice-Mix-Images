@@ -1,24 +1,20 @@
 # photo_joint
 
-- 拼接照片的结果为：  
+-The result of stitching photos is:
  ![image](final.jpg)
  ![image](final2.jpg)
 
-- 程序说明  
- - lib: PIL, numpy, numexpr, 
- - photo source: 照片默认放在当前目录的photos文件夹中  
- - 前面一张照片: 在createNevImage中定义的，可以自行修改  
- - alpha: 修改前一张照片的透明度，默认为0.5，可以自行修改测试
- - photos: 运行代码后，会在代码目录下生成几张照片，分别是运行中间接生成的。最终生成的照片为final.jpg  
- - past.py past3.py: 为实验的代码，对应着final2.jpg，fianl.jpg。两个代码具体的区别是层叠方式的不同，具体
- 的可以看代码中得注释。
- - 详见程序说明。  
+-Program description
+ -lib: PIL, numpy, numexpr,
+ -photo source: Photos are placed in the photos folder of the current directory by default
+ -The previous photo: Defined in createNevImage, you can modify it yourself
+ -alpha: modify the transparency of the previous photo, the default is 0.5, you can modify the test by yourself
+ -photos: After running the code, several photos will be generated in the code directory, which are generated indirectly during running. The final photo is final.jpg
+ -past.py past3.py: is the experimental code, corresponding to final2.jpg, fianl.jpg. The specific difference between the two codes is the different cascading method.
+ You can see the comments in the code.
+ -See the program description for details.
 
 
-- note: transfer函数直接重置照片的大小，所以照片会有所变形。由于对照片按比例进行裁剪可能会使照片不再协调。
+-note: The transfer function directly resets the size of the photo, so the photo will be deformed. Due to the proportion of cropping the photo may make the photo no longer coordinated.
 
-- thanks: @世界上没有真理
-
-
-
-
+-thanks: @the world has no truth
