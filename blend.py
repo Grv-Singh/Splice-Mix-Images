@@ -7,27 +7,16 @@ import numpy, os, random, time
 import numexpr
 STAG = time.time()
 
-# W_num: 一行放多少张照片
-# H_num: 一列放多少张照片
-# W_size: 照片宽为多少
-# H_size: 照片高为多少
-# root: 脚本的根目录
 root=""
-# 将 W_num 设置为更大的值可以取得更好的效果，例如 7，15
-# 但请注意，因实验楼环境限制，更大的值会消耗更多的内存，这可能会导致程序崩溃。
 W_num =3
-# 参考 W_num
 H_num = 3
 W_size = 640
 H_size = 360
 
-# aval: 存放所有照片的路径
 alpha = 0.5
 aval = []
 
 
-# name: getAllPhotos
-# todo: 获得所有照片的路径
 def getAllPhotos():
     STA = time.time()
     root = os.getcwd() + "/"
@@ -37,8 +26,6 @@ def getAllPhotos():
 		    aval.append(src+i)
 
 
-# name: scale
-# todo: 将照片转为一样的大小
 def scale(img_path, dst_width,dst_height):
 
     STA = time.time()
@@ -60,8 +47,6 @@ def scale(img_path, dst_width,dst_height):
     return resized_img
 
 
-# name: jointAndBlend
-# todo: 创造一张新的图片，并保存
 def jointAndBlend():
     iW_size = W_num * W_size
     iH_size = H_num * H_size
@@ -80,8 +65,6 @@ def jointAndBlend():
     Image.fromarray(I.astype(numpy.uint8)).save("blend.png")
 
 
-# name: rotate
-# todo: 旋转照片 blend.py
 def rotate():
     imName = "blend.png"
     print("Rotating...")
@@ -94,8 +77,6 @@ def rotate():
     print("rotate Func Time %s"%(time.time()-STA))
 
 
-# name: addText
-# todo: 在图片中写祝福语
 def addText():
     print("Adding Text...")
     img = Image.open("blend.png")
